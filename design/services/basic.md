@@ -19,44 +19,44 @@
 | Method | Path          | Path Parameters | Response Object |
 |--------|---------------|-----------------|-----------------|
 | GET    | /projects     | nextPageToken   | ProjectPage     |
-| GET    | /project/<id> |                 | Project         |
-| GET    | /piece/<id>   |                 | Piece           |
-| GET    | /row/<id>     |                 | Row             |
+| GET    | /project/{id} |                 | Project         |
+| GET    | /piece/{id}   |                 | Piece           |
+| GET    | /row/{id}     |                 | Row             |
 | GET    | /stats        |                 | Stats           |
 
 ## Objects
 
-| ProjectPage                 |
-|-----------------------------|
-| List<Integer> projectIdList |
-| String nextPageToken        |
+| ProjectPage                   |
+|-------------------------------|
+| List of Integer projectIdList |
+| String nextPageToken          |
 
-| Project                   |
+| Project                     |
+| ----------------------------|
+| String name                 |
+| Date createdOn              |
+| Date modifiedOn             |
+| Integer createdBy           |
+| Integer modifiedBy          |
+| List of Integer pieceIdList |
+
+| Piece                     |
 | --------------------------|
 | String name               |
 | Date createdOn            |
 | Date modifiedOn           |
 | Integer createdBy         |
 | Integer modifiedBy        |
-| List<Integer> pieceIdList |
+| List of Integer rowIdList |
 
-| Piece                   |
+| Row                     |
 | ------------------------|
 | String name             |
 | Date createdOn          |
 | Date modifiedOn         |
 | Integer createdBy       |
 | Integer modifiedBy      |
-| List<Integer> rowIdList |
-
-| Row                   |
-| ----------------------|
-| String name           |
-| Date createdOn        |
-| Date modifiedOn       |
-| Integer createdBy     |
-| Integer modifiedBy    |
-| List<Enum> stitchList |
+| List of Enum stitchList |
   
 | Stats                    |
 | -------------------------|
