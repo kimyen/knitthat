@@ -34,6 +34,7 @@
 | Project                     |
 | ----------------------------|
 | String name                 |
+| Integer id                  |
 | Date createdOn              |
 | Date modifiedOn             |
 | Integer createdBy           |
@@ -43,6 +44,7 @@
 | Piece                     |
 | --------------------------|
 | String name               |
+| Integer id                |
 | Date createdOn            |
 | Date modifiedOn           |
 | Integer createdBy         |
@@ -52,6 +54,7 @@
 | Row                     |
 | ------------------------|
 | String name             |
+| Integer id              |
 | Date createdOn          |
 | Date modifiedOn         |
 | Integer createdBy       |
